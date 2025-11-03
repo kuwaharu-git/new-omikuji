@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>おみくじ - Fortune Telling</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎋 おみくじ 🎋</h1>
+            <p class="subtitle">運勢を占おう</p>
+        </header>
+
+        <div id="selection-screen" class="screen active">
+            <h2>おみくじを選んでください</h2>
+            <div class="omikuji-options">
+                <button class="omikuji-btn" data-type="love">
+                    <span class="icon">💕</span>
+                    <span class="label">恋愛運</span>
+                </button>
+                <button class="omikuji-btn" data-type="health">
+                    <span class="icon">🏥</span>
+                    <span class="label">健康運</span>
+                </button>
+                <button class="omikuji-btn" data-type="career">
+                    <span class="icon">💼</span>
+                    <span class="label">仕事運</span>
+                </button>
+                <button class="omikuji-btn" data-type="money">
+                    <span class="icon">💰</span>
+                    <span class="label">金運</span>
+                </button>
+                <button class="omikuji-btn" data-type="general">
+                    <span class="icon">🌟</span>
+                    <span class="label">総合運</span>
+                </button>
+            </div>
+        </div>
+
+        <div id="result-screen" class="screen">
+            <div class="result-content">
+                <h2 id="result-type"></h2>
+                <div class="fortune-level" id="fortune-level"></div>
+                <div class="fortune-message" id="fortune-message"></div>
+                <div class="fortune-details">
+                    <p id="fortune-advice"></p>
+                </div>
+            </div>
+            <button id="reset-btn" class="reset-btn">もう一度引く</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
