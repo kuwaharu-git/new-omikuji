@@ -191,7 +191,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const omikujiButtons = document.querySelectorAll('.omikuji-btn');
     omikujiButtons.forEach(button => {
         button.addEventListener('click', function() {
-            const type = this.getAttribute('data-type');
+            const type = this.dataset.type;
             displayResult(type);
         });
     });
